@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra RPS</title>
+    <title>simbirps</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      a:link {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+      }
+      a:visited{
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+      }
+
+    </style>
   </head>
 
   <body>
+    <div class="play">
+    <div> <a href="/rock">Play Rock</a> </div>
+    <div> <a href="/paper">Play Paper</a> </div>
+    <div> <a href="/scissors">Play Scissors</a> </div>
+    </div>
 
     <%= yield %>
 
